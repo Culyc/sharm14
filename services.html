@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220201094211">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220206150612">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,113 +68,430 @@
 					<div class="first__empty"></div>
 				</div>
 			</section>
-			<div class="page-services__menu menu-services">
-				<div class="menu-services__container ">
+			<section class="page-services__tab">
+				<div class="page-services__container">
+					<div data-tabs class="page-services__body tabs">
+
+						<nav data-tabs-titles class="tabs__navigation menu-services__list">
+
+							<button type="submit" class="tabs__title tabs__title_small _tab-active">Ногтевой сервис</button>
+							<button type="submit" class="tabs__title tabs__title_small">Визаж</button>
+							<button type="submit" class="tabs__title tabs__title_small">Депиляция</button>
+							<button type="submit" class="tabs__title tabs__title_small">Солярий</button>
 
 
-					<ul class="menu-services__list">
-						<li class="menu-services__item"><a href="" class="menu-services__link">Ногтевой сервис</a></li>
-						<li class="menu-services__item"><a href="" class="menu-services__link">Визаж</a></li>
-						<li class="menu-services__item"><a href="" class="menu-services__link">Депиляция</a></li>
-						<li class="menu-services__item"><a href="" class="menu-services__link">Солярий</a></li>
-					</ul>
+						</nav>
+						<div data-tabs-body class="tabs__content block-tabs">
+							<div class="tabs__body nogt">
 
-				</div>
-			</div>
-			<section class="page__nail nail-block  ">
-				<div class="nail-block__container">
-					<div class="nail-block__body">
-						<div class="nail-block__empty"></div>
-						<div class="nail-block__content">
-							<div class="nail-block__title">
-								<h2>Ногтевой сервис</h2>
+								<section class="page__nail nail-block  ">
+									<div class="nail-block__container">
+										<div class="nail-block__body">
+											<div class="nail-block__empty"></div>
+											<div class="nail-block__content">
+												<div class="nail-block__title">
+													<h2>Ногтевой сервис</h2>
+												</div>
+												<div class="nail-block__text">
+													<p>К услугам наших клиентов различные виды маникра, педикюра, моделирование
+														ногтей,
+														а
+														также
+														SPA-процедуры</p>
+													<p>Все необходимые инструменты проходят трехступенчатую систему стерилизации. Для
+														дезинфекции
+														наш салон использует
+														современное немецкое оборудование.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="nail-block__image-ibg"><picture><source srcset="img/services/nail/02.webp"type="image/webp"><img src="img/services/nail/02.jpg" alt=""></picture></div>
+								</section>
+								<section class="page-services__gallery gallery">
+									<div class="gallery__container">
+										<div class="gallery__top block-top">
+											<div class="block-top__title">
+												<h2>Галлерея</h2>
+											</div>
+											<div class="block-top__slogan">
+												<p>Фото работ наших мастеров</p>
+												<div data-da=".gallery__container,768,3" class="gallery__controls">
+													<img class="gallery__arrows-prev" src="img/icons/arrowleft.svg" alt="">
+													<div class="gallery__number"></div>
+													<img class="gallery__arrows-next" src="img/icons/arrowreight.svg" alt="">
+												</div>
+											</div>
+											<div class="gallery__body">
+
+												<div class="gallery__slider">
+													<div data-gallery class="gallery__swiper">
+														<a href="img/services/gallery/01.jpg" class="gallery__slide-ibg">
+															<picture><source srcset="img/services/gallery/01.webp"type="image/webp"><img src="img/services/gallery/01.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/02.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/02.webp"type="image/webp"><img data-src="img/services/gallery/02.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/03.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/03.webp"type="image/webp"><img data-src="img/services/gallery/03.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/04.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/04.webp"type="image/webp"><img data-src="img/services/gallery/04.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/05.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/05.webp"type="image/webp"><img data-src="img/services/gallery/05.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+								</section>
+								<section class="page-services__list list-block">
+									<div class="list-block__container">
+										<div class="list-block__title">
+											<h2>Цены ногтевого
+												сервиса</h2>
+										</div>
+										<ol class="list-block__listing">
+											<li class="list-block__item">
+												<div class="list-block__text">маникюр</div>
+												<div class="list-block__price">1000 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">педикюр</div>
+												<div class="list-block__price">1300 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Покрытие гель-лак</div>
+												<div class="list-block__price">500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">моделирование ногтей</div>
+												<div class="list-block__price">2500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Дизайн ногтей</div>
+												<div class="list-block__price">900 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">парафинотерапия</div>
+												<div class="list-block__price">1200 ₽</div>
+											</li>
+										</ol>
+
+									</div>
+									<div class="list-block__label">BEAUTY</div>
+								</section>
 							</div>
-							<div class="nail-block__text">
-								<p>К услугам наших клиентов различные виды маникра, педикюра, моделирование ногтей, а также
-									SPA-процедуры</p>
-								<p>Все необходимые инструменты проходят трехступенчатую систему стерилизации. Для дезинфекции
-									наш салон использует
-									современное немецкое оборудование.</p>
+							<div class="tabs__body wizzag">
+
+								<section class="page__nail nail-block  ">
+									<div class="nail-block__container">
+										<div class="nail-block__body">
+											<div class="nail-block__empty"></div>
+											<div class="nail-block__content">
+												<div class="nail-block__title">
+													<h2>Визаж</h2>
+												</div>
+												<div class="nail-block__text">
+													<p>К услугам наших клиентов различные виды маникра, педикюра, моделирование
+														ногтей,
+														а
+														также
+														SPA-процедуры</p>
+													<p>Все необходимые инструменты проходят трехступенчатую систему стерилизации. Для
+														дезинфекции
+														наш салон использует
+														современное немецкое оборудование.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="nail-block__image-ibg"><picture><source srcset="img/services/nail/02.webp"type="image/webp"><img src="img/services/nail/02.jpg" alt=""></picture></div>
+								</section>
+								<section class="page-services__gallery gallery">
+									<div class="gallery__container">
+										<div class="gallery__top block-top">
+											<div class="block-top__title">
+												<h2>Галлерея</h2>
+											</div>
+											<div class="block-top__slogan">
+												<p>Фото работ наших мастеров</p>
+												<div data-da=".gallery__container,768,3" class="gallery__controls">
+													<img class="gallery__arrows-prev" src="img/icons/arrowleft.svg" alt="">
+													<div class="gallery__number"></div>
+													<img class="gallery__arrows-next" src="img/icons/arrowreight.svg" alt="">
+												</div>
+											</div>
+											<div class="gallery__body">
+
+												<div class="gallery__slider">
+													<div data-gallery class="gallery__swiper">
+														<a href="img/services/gallery/01.jpg" class="gallery__slide-ibg">
+															<picture><source srcset="img/services/gallery/01.webp"type="image/webp"><img src="img/services/gallery/01.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/02.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/02.webp"type="image/webp"><img data-src="img/services/gallery/02.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/03.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/03.webp"type="image/webp"><img data-src="img/services/gallery/03.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/04.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/04.webp"type="image/webp"><img data-src="img/services/gallery/04.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/05.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/05.webp"type="image/webp"><img data-src="img/services/gallery/05.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+								</section>
+								<section class="page-services__list list-block">
+									<div class="list-block__container">
+										<div class="list-block__title">
+											<h2>Цены услуг визажа</h2>
+										</div>
+										<ol class="list-block__listing">
+											<li class="list-block__item">
+												<div class="list-block__text">Дневной макияж</div>
+												<div class="list-block__price">1000 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Вечерний макияж</div>
+												<div class="list-block__price">1300 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Свадебный макияж</div>
+												<div class="list-block__price">500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Перманентный макияж</div>
+												<div class="list-block__price">2500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Коррекция бровей</div>
+												<div class="list-block__price">900 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">Наращивание ресниц</div>
+												<div class="list-block__price">1200 ₽</div>
+											</li>
+										</ol>
+
+									</div>
+									<div class="list-block__label">BEAUTY</div>
+								</section>
 							</div>
+							<div class="tabs__body depil">
+
+								<section class="page__nail nail-block  ">
+									<div class="nail-block__container">
+										<div class="nail-block__body">
+											<div class="nail-block__empty"></div>
+											<div class="nail-block__content">
+												<div class="nail-block__title">
+													<h2>Депиляция</h2>
+												</div>
+												<div class="nail-block__text">
+													<p>К услугам наших клиентов различные виды маникра, педикюра, моделирование
+														ногтей,
+														а
+														также
+														SPA-процедуры</p>
+													<p>Все необходимые инструменты проходят трехступенчатую систему стерилизации. Для
+														дезинфекции
+														наш салон использует
+														современное немецкое оборудование.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="nail-block__image-ibg"><picture><source srcset="img/services/nail/02.webp"type="image/webp"><img src="img/services/nail/02.jpg" alt=""></picture></div>
+								</section>
+								<section class="page-services__gallery gallery">
+									<div class="gallery__container">
+										<div class="gallery__top block-top">
+											<div class="block-top__title">
+												<h2>Галлерея</h2>
+											</div>
+											<div class="block-top__slogan">
+												<p>Процесс работы и результат</p>
+												<div data-da=".gallery__container,768,3" class="gallery__controls">
+													<img class="gallery__arrows-prev" src="img/icons/arrowleft.svg" alt="">
+													<div class="gallery__number"></div>
+													<img class="gallery__arrows-next" src="img/icons/arrowreight.svg" alt="">
+												</div>
+											</div>
+											<div class="gallery__body">
+
+												<div class="gallery__slider">
+													<div data-gallery class="gallery__swiper">
+														<a href="img/services/gallery/01.jpg" class="gallery__slide-ibg">
+															<picture><source srcset="img/services/gallery/01.webp"type="image/webp"><img src="img/services/gallery/01.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/02.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/02.webp"type="image/webp"><img data-src="img/services/gallery/02.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/03.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/03.webp"type="image/webp"><img data-src="img/services/gallery/03.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/04.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/04.webp"type="image/webp"><img data-src="img/services/gallery/04.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/05.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/05.webp"type="image/webp"><img data-src="img/services/gallery/05.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+								</section>
+								<section class="page-services__list list-block">
+									<div class="list-block__container">
+										<div class="list-block__title">
+											<h2>Цены депиляции</h2>
+										</div>
+										<ol class="list-block__listing">
+											<li class="list-block__item">
+												<div class="list-block__text">глубокое бикини</div>
+												<div class="list-block__price">1000 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">классическое бикини</div>
+												<div class="list-block__price">1300 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">подмышечные впадины</div>
+												<div class="list-block__price">500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">руки полностью</div>
+												<div class="list-block__price">2500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">ноги полностью</div>
+												<div class="list-block__price">900 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">лицо и шея</div>
+												<div class="list-block__price">1200 ₽</div>
+											</li>
+										</ol>
+
+									</div>
+									<div class="list-block__label">BEAUTY</div>
+								</section>
+							</div>
+							<div class="tabs__body sollyariy">
+
+								<section class="page__nail nail-block  ">
+									<div class="nail-block__container">
+										<div class="nail-block__body">
+											<div class="nail-block__empty"></div>
+											<div class="nail-block__content">
+												<div class="nail-block__title">
+													<h2>Солярий</h2>
+												</div>
+												<div class="nail-block__text">
+													<p>К услугам наших клиентов различные виды маникра, педикюра, моделирование
+														ногтей,
+														а
+														также
+														SPA-процедуры</p>
+													<p>Все необходимые инструменты проходят трехступенчатую систему стерилизации. Для
+														дезинфекции
+														наш салон использует
+														современное немецкое оборудование.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="nail-block__image-ibg"><picture><source srcset="img/services/nail/02.webp"type="image/webp"><img src="img/services/nail/02.jpg" alt=""></picture></div>
+								</section>
+								<section class="page-services__gallery gallery">
+									<div class="gallery__container">
+										<div class="gallery__top block-top">
+											<div class="block-top__title">
+												<h2>Галлерея</h2>
+											</div>
+											<div class="block-top__slogan">
+												<p>В нашем солярии удобно и комфортно</p>
+												<div data-da=".gallery__container,768,3" class="gallery__controls">
+													<img class="gallery__arrows-prev" src="img/icons/arrowleft.svg" alt="">
+													<div class="gallery__number"></div>
+													<img class="gallery__arrows-next" src="img/icons/arrowreight.svg" alt="">
+												</div>
+											</div>
+											<div class="gallery__body">
+
+												<div class="gallery__slider">
+													<div data-gallery class="gallery__swiper">
+														<a href="img/services/gallery/01.jpg" class="gallery__slide-ibg">
+															<picture><source srcset="img/services/gallery/01.webp"type="image/webp"><img src="img/services/gallery/01.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/02.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/02.webp"type="image/webp"><img data-src="img/services/gallery/02.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/03.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/03.webp"type="image/webp"><img data-src="img/services/gallery/03.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/04.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/04.webp"type="image/webp"><img data-src="img/services/gallery/04.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+														<a href="img/services/gallery/05.jpg" class="gallery__slide-ibg">
+															<picture><source data-srcset="img/services/gallery/05.webp"type="image/webp"><img data-src="img/services/gallery/05.jpg" alt="foto" class="swiper-lazy"></picture>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+								</section>
+								<section class="page-services__list list-block">
+									<div class="list-block__container">
+										<div class="list-block__title">
+											<h2>Цены солярия</h2>
+										</div>
+										<ol class="list-block__listing">
+											<li class="list-block__item">
+												<div class="list-block__text">1 мин. загара</div>
+												<div class="list-block__price">1000 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">1 мин. загара по абонементу</div>
+												<div class="list-block__price">1300 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">абонемент 30 мин.</div>
+												<div class="list-block__price">500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">абонемент 50 мин.</div>
+												<div class="list-block__price">2500 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">абонемент 100 мин.</div>
+												<div class="list-block__price">900 ₽</div>
+											</li>
+											<li class="list-block__item">
+												<div class="list-block__text">С 15-00 до 17-00 скидка</div>
+												<div class="list-block__price">1200 ₽</div>
+											</li>
+										</ol>
+
+									</div>
+									<div class="list-block__label">BEAUTY</div>
+								</section>
+							</div>
+
 						</div>
+
+
 					</div>
 				</div>
-				<div class="nail-block__image-ibg"><picture><source srcset="img/services/nail/02.webp"type="image/webp"><img src="img/services/nail/02.jpg" alt=""></picture></div>
 			</section>
-			<section class="page-services__gallery gallery">
-				<div class="gallery__container">
-					<div class="gallery__top block-top">
-						<div class="block-top__title">
-							<h2>Галлерея</h2>
-						</div>
-						<div class="block-top__slogan">
-							<p>Фото работ наших мастеров</p>
-							<div data-da=".gallery__container,768,3" class="gallery__controls">
-								<img class="gallery__arrows-prev" src="img/icons/arrowleft.svg" alt="">
-								<div class="gallery__number"></div>
-								<img class="gallery__arrows-next" src="img/icons/arrowreight.svg" alt="">
-							</div>
-						</div>
-						<div class="gallery__body">
 
-							<div class="gallery__slider">
-								<div data-gallery class="gallery__swiper">
-									<a href="img/services/gallery/01.jpg" class="gallery__slide-ibg">
-										<picture><source srcset="img/services/gallery/01.webp"type="image/webp"><img src="img/services/gallery/01.jpg" alt="foto" class="swiper-lazy"></picture>
-									</a>
-									<a href="img/services/gallery/02.jpg" class="gallery__slide-ibg">
-										<picture><source data-srcset="img/services/gallery/02.webp"type="image/webp"><img data-src="img/services/gallery/02.jpg" alt="foto" class="swiper-lazy"></picture>
-									</a>
-									<a href="img/services/gallery/03.jpg" class="gallery__slide-ibg">
-										<picture><source data-srcset="img/services/gallery/03.webp"type="image/webp"><img data-src="img/services/gallery/03.jpg" alt="foto" class="swiper-lazy"></picture>
-									</a>
-									<a href="img/services/gallery/04.jpg" class="gallery__slide-ibg">
-										<picture><source data-srcset="img/services/gallery/04.webp"type="image/webp"><img data-src="img/services/gallery/04.jpg" alt="foto" class="swiper-lazy"></picture>
-									</a>
-									<a href="img/services/gallery/05.jpg" class="gallery__slide-ibg">
-										<picture><source data-srcset="img/services/gallery/05.webp"type="image/webp"><img data-src="img/services/gallery/05.jpg" alt="foto" class="swiper-lazy"></picture>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>
-			<section class="page-services__list list-block">
-				<div class="list-block__container">
-					<div class="list-block__title">
-						<h2>Цены ногтевого
-							сервиса</h2>
-					</div>
-					<ol class="list-block__listing">
-						<li class="list-block__item">
-							<div class="list-block__text">маникюр</div>
-							<div class="list-block__price">1000 ₽</div>
-						</li>
-						<li class="list-block__item">
-							<div class="list-block__text">педикюр</div>
-							<div class="list-block__price">1300 ₽</div>
-						</li>
-						<li class="list-block__item">
-							<div class="list-block__text">Покрытие гель-лак</div>
-							<div class="list-block__price">500 ₽</div>
-						</li>
-						<li class="list-block__item">
-							<div class="list-block__text">моделирование ногтей</div>
-							<div class="list-block__price">2500 ₽</div>
-						</li>
-						<li class="list-block__item">
-							<div class="list-block__text">Дизайн ногтей</div>
-							<div class="list-block__price">900 ₽</div>
-						</li>
-						<li class="list-block__item">
-							<div class="list-block__text">парафинотерапия</div>
-							<div class="list-block__price">1200 ₽</div>
-						</li>
-					</ol>
 
-				</div>
-				<div class="list-block__label">BEAUTY</div>
-			</section>
 			<section class="page-services__registration registration">
 				<div class="registration__container">
 					<div class="registration__top ">
@@ -298,7 +615,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220201094211"></script>
+	<script src="js/app.min.js?_v=20220206150612"></script>
 </body>
+
 
 </html>
