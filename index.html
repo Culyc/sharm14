@@ -1,182 +1,495 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220405082744">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «14Sharm»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «14Sharm»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-			<li><a target="_blank" href="training.html">Обучение</a></li>
-			<li><a target="_blank" href="contacts.html">Контакты</a></li>
-			<li><a target="_blank" href="services.html">Услуги</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header class="header">
+
+			<div class="header__container">
+				<div class="header__logo"><img src="img/logo/logo2.svg" alt=""></div>
+				<div class="header__menu menu">
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="training.html" class="menu__link">Обучение</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<div class="header__tel"><a href="tel:+7 922 405 25 45">+7 922 405 25 45
+					</a></div>
+
+			</div>
+		</header>
+		<main class="page">
+			<section data-fullscreen class="page__full first">
+				<div class="first__box">
+
+					<div class="first__container">
+						<div class="first__top">
+							<div class="first__goal">
+								<div data-da=".first__empty,768.98" class="first__content">
+									<h1 class="first__header">Салон красоты</h1>
+									<div class="first__text">Мы создаем настроение.</div>
+									<div class="first__button">
+										<button data-popup="#popupregistrations" type="submit" class="first__btn">Записаться</button>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div class="first__bacgraund">
+								<div data-da=".first__goal,768.98" class="first__label">SHARM</div>
+								<div class="first__image-ibg"><picture><source srcset="img/first/face.webp"type="image/webp"><img src="img/first/face.png" alt=""></picture></div>
+
+							</div>
+						</div>
+						<div class="first__icons">
+							<a class="first__vk"><img src="img/icons/vk.svg" alt=""></a>
+							<a class="first__inst"><img src="img/icons/inst.svg" alt=""></a>
+							<a class="first__facebook"><img src="img/icons/facebook.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="first__empty"></div>
+				</div>
+
+
+
+
+			</section>
+			<section class="page__welcom welcom">
+				<div class="welcom__container">
+					<div class="welcom__top">
+						<div class="welcom__title">Добро пожаловать в наш салон</div>
+						<div class="welcom__content">
+							<p>Салон красоты «Шарм» — это пространство красоты и стиля! Наше кредо: создавать настроение.</p>
+							<p>Наш салон предоставляет весь спектр самых популярных услуг — это визаж, уход за бровями</p>
+
+
+							<div data-showmore class="welcom__body moore">
+
+								<div data-showmore-content=1 class="moore__content welcom__text">
+
+									Салон красоты «Шарм» — это пространство красоты и стиля! Наше кредо: создавать настроение.
+									Салон красоты «Шарм» — это пространство красоты и стиля! Наше кредо: создавать настроение.
+									Салон красоты «Шарм» — это пространство красоты и стиля! Наше кредо: создавать настроение.
+									Салон красоты «Шарм» — это пространство красоты и стиля! Наше кредо: создавать настроение.
+
+								</div>
+
+								<button data-showmore-button=1 type="button" class="welcom__moore moore__more"><span>читать
+										далее
+									</span><span>Скрыть</span></button>
+							</div>
+
+						</div>
+					</div>
+					<div class="welcom__bottom">
+						<div class="welcom__icon"><picture><source srcset="img/icons/play/svg"type="image/webp"><img src="img/icons/play/svg" alt=""></picture></div>
+						<video muted controls loop preload="auto" poster="img/video.png" id="welcom__video" src="files/1.mp4" class="welcom__video"></video>
+					</div>
+				</div>
+
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="services__top block-top">
+						<div class="block-top__title">Услуги</div>
+						<div class="block-top__slogan">Создай свой образ и стиль вместе с нами</div>
+					</div>
+					<div class="services__bottom">
+						<div class="services__item"><a href="" class="services__image-ibg"><picture><source srcset="img/services/01.webp"type="image/webp"><img src="img/services/01.jpg" alt=""></picture></a></div>
+						<div class="services__item"><a href="" class="services__image-ibg"><picture><source srcset="img/services/02.webp"type="image/webp"><img src="img/services/02.jpg" alt=""></picture></a></div>
+						<div class="services__item"><a href="" class="services__image-ibg"><picture><source srcset="img/services/03.webp"type="image/webp"><img src="img/services/03.jpg" alt=""></picture></a></div>
+						<div class="services__item"><a href="" class="services__image-ibg"><picture><source srcset="img/services/04.webp"type="image/webp"><img src="img/services/04.jpg" alt=""></picture></a></div>
+
+					</div>
+				</div>
+
+			</section>
+			<section class="page__salon salon">
+				<div class="salon__container">
+					<div class="salon__why why-block">
+						<h1 class="why-block__title">Почему мы лучший салон</h1>
+						<div class="why-block__column">
+							<div class="why-block__content"><span>01</span>
+								<p>косметика лучших мировых брендов - -Gehwol, OPI, Luxio, Reforma</p>
+							</div>
+							<div class="why-block__content"><span>02</span>
+								<p>дезинфекция на уровне стоматологической клиники</p>
+							</div>
+							<div class="why-block__content"><span>03</span>
+								<p>косметика лучших мировых брендов - -Gehwol, OPI, Luxio, Reforma</p>
+							</div>
+							<div class="why-block__content"><span>04</span>
+								<p>косметика лучших мировых брендов - -Gehwol, OPI, Luxio, Reforma</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__masters masters">
+				<div class="masters__container">
+					<div class="masters__top block-top">
+						<div class="block-top__title">Мастера</div>
+						<div class="block-top__slogan">
+							<p>Все наши специалисты имеют сертификаты и дипломы</p>
+							<div data-da=".masters__container,768,3" class="masters__arrows arrows">
+								<img class="arrows__prev" src="img/icons/arrowleft.svg" alt="">
+								<div class="arrows__number"></div>
+								<img class="arrows__next" src="img/icons/arrowreight.svg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="masters__slider">
+						<div class="masters__swiper">
+							<div class="masters__slide slide-masters">
+								<div class="slide-masters__item ">
+									<div class="slide-masters__top">
+
+										<div class="slide-masters__image-ibg"><picture><source srcset="img/masters/01.webp"type="image/webp"><img src="img/masters/01.jpg" alt=""></picture></div>
+										<a class="slide-masters__hover">
+											<div class="slide-masters__slogan">Образование</div>
+											<div class="slide-masters__text">Школа красоты «Шарм», Ржевская академия искусства и
+												культуры</div>
+											<div class="slide-masters__slogan">Опыт работы</div>
+											<div class="slide-masters__text">5 лет</div>
+										</a>
+									</div>
+									<div class="slide-masters__bottom">
+										<h3 class="slide-masters__name">Ирина Савельева</h3>
+										<p class="slide-masters__specialty">мастер-бровист</p>
+									</div>
+								</div>
+							</div>
+							<div class="masters__slide slide-masters">
+								<div class="slide-masters__item">
+									<div class="slide-masters__top">
+
+										<div class="slide-masters__image-ibg"><picture><source srcset="img/masters/02.webp"type="image/webp"><img src="img/masters/02.jpg" alt=""></picture></div>
+										<a class="slide-masters__hover">
+											<div class="slide-masters__slogan">Образование</div>
+											<div class="slide-masters__text">Школа красоты «Шарм», Ржевская академия искусства и
+												культуры</div>
+											<div class="slide-masters__slogan">Опыт работы</div>
+											<div class="slide-masters__text">5 лет</div>
+										</a>
+									</div>
+									<div class="slide-masters__bottom">
+										<h3 class="slide-masters__name">Ирина Савельева</h3>
+										<p class="slide-masters__specialty">мастер-бровист</p>
+									</div>
+								</div>
+							</div>
+							<div class="masters__slide slide-masters">
+								<div class="slide-masters__item">
+									<div class="slide-masters__top">
+
+										<div class="slide-masters__image-ibg"><picture><source srcset="img/masters/03.webp"type="image/webp"><img src="img/masters/03.jpg" alt=""></picture></div>
+										<a class="slide-masters__hover">
+											<div class="slide-masters__slogan">Образование</div>
+											<div class="slide-masters__text">Школа красоты «Шарм», Ржевская академия искусства и
+												культуры</div>
+											<div class="slide-masters__slogan">Опыт работы</div>
+											<div class="slide-masters__text">5 лет</div>
+										</a>
+									</div>
+									<div class="slide-masters__bottom">
+										<h3 class="slide-masters__name">Елена Александрова</h3>
+										<p class="slide-masters__specialty">мастер-визажист</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- </div> -->
+			</section>
+			<section class="page__feedback page-feedback">
+				<div class="page-feedback__container">
+					<div class="page-feedback__top ">
+						<div class="page-feedback__title">Отзывы</div>
+						<div class="page-feedback__slogan">
+							<p>Мы каждый день поплняем ряды своих клиентов</p>
+							<div data-da=".page-feedback__slider,768,0" class="page-feedback__arrows ">
+								<img class="page-feedback__arrows-prev" src="img/icons/arrowleft.svg" alt="">
+								<div class="page-feedback__arrows-number "></div>
+								<img class="page-feedback__arrows-next " src="img/icons/arrowreight.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="page-feedback__slider">
+						<div class="page-feedback__swiper">
+							<div class="page-feedback__slide feedback">
+								<div class="feedback__image-ibg"><picture><source srcset="img/masters/02.webp"type="image/webp"><img src="img/masters/02.jpg" alt=""></picture></div>
+
+								<div class=" feedback__reight_1">
+									<h3 class="feedback__name">Елена Александрова</h3>
+									<p class="feedback__specialty">В этом салоне была ни раз, теперь выбираю только его.
+										Нравиться подход к клиенту, приветливый персонал, расслабляющая
+										атмосфера. Я вибираю только “Шарм” и всем советую. </p>
+									<div data-showmore-media="768,max" data-showmore="size" class="block">
+										<div data-showmore-content='1' class="block__content">расслабляющая
+											атмосфера. Я вибираю только “Шарм” и всем советую.</div>
+										<button data-showmore-button type="button" class="block__more"><span>Читать
+												еще</span><span>Скpыть</span></button>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="page-feedback__slide feedback ">
+								<div class="feedback__image-ibg"><picture><source srcset="img/reviews/01.webp"type="image/webp"><img src="img/reviews/01.jpg" alt=""></picture></div>
+
+								<div class="feedback__reight_1">
+									<h3 class="feedback__name">Мария Длинноногая</h3>
+									<p class="feedback__specialty">В этом салоне была ни раз, теперь выбираю только его.
+										Нравиться подход к клиенту, приветливый персонал, расслабляющая
+										атмосфера. Я вибираю только “Шарм” и всем советую.</p>
+									<div data-showmore-media="768,max" data-showmore="size" class="block">
+										<div data-showmore-content='1' class="block__content">расслабляющая
+											атмосфера. Я вибираю только “Шарм” и всем советую.В этом салоне была ни раз, теперь
+											выбираю только его.
+											Нравиться подход к клиенту, приветливый персонал, расслабляющая
+											атмосфера. Я вибираю только “Шарм” и всем советую.расслабляющая
+											атмосфера. Я вибираю только “Шарм” и всем советую.В этом салоне была ни раз, теперь
+											выбираю только его.
+											Нравиться подход к клиенту, приветливый персонал, расслабляющая
+											атмосфера. Я вибираю только “Шарм” и всем советую.</div>
+										<button data-showmore-button type="button" class="block__more"><span>Читать
+												еще</span><span>Скpыть</span></button>
+									</div>
+								</div>
+							</div>
+							<div class="page-feedback__slide feedback ">
+								<div class="feedback__image-ibg"><picture><source srcset="img/masters/01.webp"type="image/webp"><img src="img/masters/01.jpg" alt=""></picture></div>
+
+								<div class=" feedback__reight_1">
+									<h3 class="feedback__name">Елена Грудастая</h3>
+									<p class="feedback__specialty">В этом салоне была ни раз, теперь выбираю только его.
+										Нравиться подход к клиенту, приветливый персонал, расслабляющая
+										атмосфера. Я вибираю только “Шарм” и всем советую.</p>
+									<div data-showmore-media="768,max" data-showmore="size" class="block">
+										<div data-showmore-content='1' class="block__content">расслабляющая
+											атмосфера. Я вибираю только “Шарм” и всем советую.</div>
+										<button data-showmore-button type="button" class="block__more"><span>Читать
+												еще</span><span>Скpыть</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</section>
+			<section class="page__insta insta">
+				<div class="insta__container">
+					<div class="insta__top ">
+						<h2 class="insta__title">Мы в Instagram</h2>
+						<div class="insta__slogan">
+							<p>Подписывайтесь на наши новости</p>
+							<a data-da=".insta__container,768,3" class="insta__link ">
+								<p>Подписаться</p><img src="img/icons/inst.svg" alt="">
+							</a>
+						</div>
+
+					</div>
+					<div class="insta__bottom">
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/01.webp"type="image/webp"><img src="img/insta/01.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/02.webp"type="image/webp"><img src="img/insta/02.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/03.webp"type="image/webp"><img src="img/insta/03.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/04.webp"type="image/webp"><img src="img/insta/04.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/05.webp"type="image/webp"><img src="img/insta/05.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/06.webp"type="image/webp"><img src="img/insta/06.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/07.webp"type="image/webp"><img src="img/insta/07.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+						<a href="" class="insta__item-ibg">
+							<picture><source srcset="img/insta/08.webp"type="image/webp"><img src="img/insta/08.jpg" alt="" class="insta__image"></picture>
+							<div class="insta__hover">
+								<p>Перейти</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__registration registration">
+				<div class="registration__container">
+					<div class="registration__top ">
+						<h2 class="registration__title">Онлайн запись</h2>
+						<div class="registration__slogan">
+							<p>заполните форму для записи в салон</p>
+						</div>
+					</div>
+					<div class="registration__body">
+						<form action="#" class="registration__form form">
+
+							<div class="form__box">
+								<input required autocomplete="off" placeholder="Имя" type="text" name="username" id="" class="form__input">
+							</div>
+							<div class="form__box">
+								<input required autocomplete="off" placeholder=" телефон" type="tel" name="phone" id="" class="form__input">
+							</div>
+							<div class="form__box">
+
+								<input required autocomplete="off" placeholder="Услуга" type="text" name="userservices" id="" class="form__input">
+							</div>
+							<div class="checkbox ">
+								<div class="checkbox__body">
+									<input required id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]
+																																												name=" form[]">
+									<label for="c_1" class="checkbox__label"> <span>Даю согласие на обработку
+											персональных данных</span>
+									</label>
+								</div>
+
+
+								<button required type="submit" class="form__button-btn"><span>Отправить</span></button>
+
+							</div>
+
+
+
+
+						</form>
+						<div class="registration__empty"></div>
+					</div>
+
+
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__logo"><img src="img/logo/logo2.svg" alt=""></div>
+					<ul class="footer__menu">
+						<a href="index.html" class="footer__item">Главная</a>
+						<a href="services.html" class="footer__item">Услуги</a>
+						<a href="training.html" class="footer__item">Обучение</a>
+						<a href="contacts.html" class="footer__item">Контакты</a>
+					</ul>
+					<div class="footer__telefon">
+						<a href="tel:79224052545" class="footer__link">+7 922 405 25 45</a>
+						<p class="footer__time">Ежедневно с 10:00 до 20:00</p>
+					</div>
+				</div>
+				<div class="footer__bottom">@ 2020 SHARM Beauty studio Все права защищены</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup-kurs" aria-hidden="true" class=" popup popup-kurs">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+				</div>
+			</div>
 		</div>
 	</div>
+	<div id="popupregistrations" aria-hidden="true" class=" popup popup-registration">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="registration__top ">
+						<h2 class="registration__title">Онлайн запись</h2>
+						<div class="registration__slogan">
+							<p>заполните форму для записи в салон</p>
+						</div>
+					</div>
+
+					<form action="#" class="registration__form form">
+
+						<div class="form__box">
+							<input required autocomplete="off" placeholder="Имя" type="text" name="username" id="" class="form__input">
+						</div>
+						<div class="form__box">
+							<input required autocomplete="off" placeholder=" телефон" type="tel" name="phone" id="" class="form__input">
+						</div>
+						<div class="form__box">
+
+							<input required autocomplete="off" placeholder="Услуга" type="text" name="userservices" id="" class="form__input">
+						</div>
+						<div class="checkbox ">
+							<div class="checkbox__body">
+								<input required id="c_once" data-error="Ошибка" class="checkbox__input" type="checkbox" value="10" name="form[checkbox]
+																																																name=" form[]">
+								<label for="c_once" class="checkbox__label"> <span>Даю согласие на обработку
+										персональных данных</span>
+								</label>
+							</div>
+
+
+							<button required type="submit" data-close class="form__button-btn"><span>Отправить</span></button>
+
+						</div>
+
+
+
+
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220405082744"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>

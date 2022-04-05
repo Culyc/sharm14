@@ -117,12 +117,12 @@
               e &&
                 (void 0 === i ? (void 0 === s ? e(t) : e(t, s)) : e(t, s, i));
             },
-            O = function (e, t) {
+            k = function (e, t) {
               n
                 ? e.classList.add(t)
                 : (e.className += (e.className ? " " : "") + t);
             },
-            k = function (e, t) {
+            O = function (e, t) {
               n
                 ? e.classList.remove(t)
                 : (e.className = e.className
@@ -189,7 +189,7 @@
               }
             },
             R = function (e, t, s) {
-              O(e, t.class_loading),
+              k(e, t.class_loading),
                 E(e, g),
                 s && (P(s, 1), L(t.callback_loading, e, s));
             },
@@ -260,7 +260,7 @@
                 (function (e) {
                   e && (e.toLoadCount -= 1);
                 })(s),
-                k(e, t.class_loading),
+                O(e, t.class_loading),
                 t.unobserve_completed && M(e, s);
             },
             ie = function (e, t, s) {
@@ -276,7 +276,7 @@
                     !(function (e, t, s, i) {
                       var n = I(t);
                       se(t, s, i),
-                        O(t, s.class_loaded),
+                        k(t, s.class_loaded),
                         E(t, m),
                         L(s.callback_loaded, t, i),
                         n || Q(s, i);
@@ -287,7 +287,7 @@
                     !(function (e, t, s, i) {
                       var n = I(t);
                       se(t, s, i),
-                        O(t, s.class_error),
+                        k(t, s.class_error),
                         E(t, v),
                         L(s.callback_error, t, i),
                         n || Q(s, i);
@@ -320,7 +320,7 @@
                   o &&
                     ((e.style.backgroundImage = o),
                     (function (e, t, s) {
-                      O(e, t.class_applied),
+                      k(e, t.class_applied),
                         E(e, f),
                         s &&
                           (t.unobserve_completed && M(e, t),
@@ -378,12 +378,12 @@
                 (function (e, t) {
                   T(e) ||
                     I(e) ||
-                    (k(e, t.class_entered),
-                    k(e, t.class_exited),
-                    k(e, t.class_applied),
-                    k(e, t.class_loading),
-                    k(e, t.class_loaded),
-                    k(e, t.class_error));
+                    (O(e, t.class_entered),
+                    O(e, t.class_exited),
+                    O(e, t.class_applied),
+                    O(e, t.class_loading),
+                    O(e, t.class_loaded),
+                    O(e, t.class_error));
                 })(e, t),
                 x(e),
                 V(e);
@@ -402,8 +402,8 @@
                         return _.indexOf(S(e)) >= 0;
                       })(e);
                       E(e, "entered"),
-                        O(e, s.class_entered),
-                        k(e, s.class_exited),
+                        k(e, s.class_entered),
+                        O(e, s.class_exited),
                         (function (e, t, s) {
                           t.unobserve_entered && M(e, s);
                         })(e, s, i),
@@ -412,7 +412,7 @@
                     })(e.target, e, t, s)
                   : (function (e, t, s, i) {
                       T(e) ||
-                        (O(e, s.class_exited),
+                        (k(e, s.class_exited),
                         (function (e, t, s, i) {
                           s.cancel_on_exit &&
                             (function (e) {
@@ -427,7 +427,7 @@
                                 oe(e);
                             })(e),
                             ae(e),
-                            k(e, s.class_loading),
+                            O(e, s.class_loading),
                             P(i, -1),
                             x(e),
                             L(s.callback_cancel, e, t, i));
@@ -477,7 +477,7 @@
                       !(function (e, t) {
                         var s;
                         ((s = ge(e)), he(s).filter(me)).forEach(function (t) {
-                          k(t, e.class_error), x(t);
+                          O(t, e.class_error), x(t);
                         }),
                           t.update();
                       })(e, s);
@@ -1819,10 +1819,10 @@
     function L(e, t = 0) {
       return setTimeout(e, t);
     }
-    function O() {
+    function k() {
       return Date.now();
     }
-    function k(e, t = "x") {
+    function O(e, t = "x") {
       const s = b();
       let i, n, r;
       const o = (function (e) {
@@ -2611,7 +2611,7 @@
         } = this;
         if (t.virtualTranslate) return s ? -i : i;
         if (t.cssMode) return i;
-        let r = k(n[0], e);
+        let r = O(n[0], e);
         return s && (r = -r), r || 0;
       },
       setTranslate: function (e, t) {
@@ -3142,7 +3142,7 @@
         }),
         (o.startX = p),
         (o.startY = h),
-        (n.touchStartTime = O()),
+        (n.touchStartTime = k()),
         (t.allowClick = !0),
         t.updateSize(),
         (t.swipeDirection = void 0),
@@ -3194,7 +3194,7 @@
               currentX: c,
               currentY: u,
             }),
-            (i.touchStartTime = O()))
+            (i.touchStartTime = k()))
           )
         );
       if (i.isTouchEvent && n.touchReleaseOnEdges && !n.loop)
@@ -3354,7 +3354,7 @@
         s.isTouched &&
         (!0 === t.allowSlideNext || !0 === t.allowSlidePrev) &&
         t.setGrabCursor(!1);
-      const d = O(),
+      const d = k(),
         c = d - s.touchStartTime;
       if (t.allowClick) {
         const e = l.path || (l.composedPath && l.composedPath());
@@ -3365,7 +3365,7 @@
             t.emit("doubleTap doubleClick", l);
       }
       if (
-        ((s.lastClickTime = O()),
+        ((s.lastClickTime = k()),
         L(() => {
           t.destroyed || (t.allowClick = !0);
         }),
@@ -3991,7 +3991,7 @@
               startTranslate: void 0,
               allowThresholdMove: void 0,
               focusableElements: i.params.focusableElements,
-              lastClickTime: O(),
+              lastClickTime: k(),
               clickTimeout: void 0,
               velocities: [],
               allowMomentumBounce: void 0,
@@ -5515,7 +5515,7 @@
           }));
         return "" + a + o;
       },
-      Oe = function (e) {
+      ke = function (e) {
         for (var t = [], s = [], i = "", n = 0; n < e.length; n++) {
           var r = e[n].split(" ");
           "" === r[0] && r.splice(0, 1), s.push(r[0]), t.push(r[1]);
@@ -5527,7 +5527,7 @@
           }
         return i;
       },
-      ke = function (e) {
+      Oe = function (e) {
         return !!e && !!e.complete && 0 !== e.naturalWidth;
       },
       Ae = function (e, t, s, i) {
@@ -6275,7 +6275,7 @@
           }),
           (e.prototype.onSlideObjectLoad = function (e, t, s, i) {
             var n = e.find(".lg-object").first();
-            ke(n.get()) || t
+            Oe(n.get()) || t
               ? s()
               : (n.on("load.lg error.lg", function () {
                   s && s();
@@ -6347,7 +6347,7 @@
               u = c && "string" == typeof c ? JSON.parse(c) : c;
             if (i.responsive) {
               var p = i.responsive.split(",");
-              d = Oe(p) || d;
+              d = ke(p) || d;
             }
             var h = i.__slideVideoInfo,
               g = "",
@@ -7182,7 +7182,25 @@
       lt = document.location.href;
     for (let e = 0; e < at.length; e++)
       lt == at[e].href && at[e].classList.add("active-footer");
-    (window.FLS = !0),
+    !(function () {
+      let e = document.getElementById("appeal__quote"),
+        t = window.getComputedStyle(e).height,
+        s = document.getElementById("appeal-background");
+      if (document.getElementById("appeal-background")) {
+        s.style.height = t;
+      }
+    })(),
+      (window.onresize = function () {
+        if (document.getElementById("appeal-background")) {
+          function e() {
+            let e = document.getElementById("appeal__quote"),
+              t = window.getComputedStyle(e).height;
+            document.getElementById("appeal-background").style.height = t;
+          }
+          e();
+        }
+      }),
+      (window.FLS = !0),
       (function (e) {
         let t = new Image();
         (t.onload = t.onerror =
@@ -7205,7 +7223,6 @@
           window.addEventListener("resize", e), e();
         }
       })(),
-      console.log("11"),
       (function () {
         const e = document.querySelectorAll("[data-tabs]");
         let t = [];
@@ -7294,7 +7311,6 @@
           }
         }
       })(),
-      console.log("1234567"),
       (function () {
         const e = document.querySelectorAll("[data-showmore]");
         let t, s;
